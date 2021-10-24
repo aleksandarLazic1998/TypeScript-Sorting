@@ -1,0 +1,29 @@
+{
+  "name": "TypeScript-Sorting",
+  "version": "1.0.0",
+  "description": "- The only purpose of this projects is to set example of using classes and guard types in typescript.\r - And exercise knowledge of TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc --watch",
+		"start:run": "nodemon build/index.js",
+		"start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandarLazic1998/TypeScript-Sortin.git"
+  },
+  "keywords": [],
+  "author": "Aleksandar Lazic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksandarLazic1998/TypeScript-Sortin/issues"
+  },
+  "homepage": "https://github.com/aleksandarLazic1998/TypeScript-Sortin#readme",
+  "dependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
