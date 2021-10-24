@@ -1,8 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var Characters_1 = require("./Class/Characters");
 var NumbersArray_1 = require("./Class/NumbersArray");
 var Sort_1 = require("./Class/Sort");
 var numbersArray = new NumbersArray_1.NumbersArray([10, 14, 0, 7, -2, 5, 9, -5]);
-var sort = new Sort_1.Sort(numbersArray);
-sort.sort();
+var charactersArray = new Characters_1.CharactersArray('aleksandAR');
+var sortNum = new Sort_1.Sort(numbersArray);
+var sortChar = new Sort_1.Sort(charactersArray);
+sortNum.sort();
+sortChar.sort();
 console.log(numbersArray.data);
+console.log(charactersArray.data);
