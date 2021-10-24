@@ -10,4 +10,4 @@
 
 ## Usage:
 
--The app will check if the data is: 1. Array of numbers, 2. String or 3. Linked List and sort it with Buble Sort Algorithm
+- The app will check if the data is: 1. Array of numbers, 2. String or 3. Linked List and sort it with Buble Sort Algorithm
