@@ -1,7 +1,10 @@
-import { NumbersArray } from "./NumbersArray";
-
+interface IsSortable {
+	length: number;
+	compare(leftIndex: number, rightIndex: number): boolean;
+	swap(leftIndex: number, rightIndex: number): void;
+}
 export class Sort {
-	constructor(public collection: NumbersArray) {}
+	constructor(public collection: IsSortable) {}
 
 	sort() {
 		const { length } = this.collection;
