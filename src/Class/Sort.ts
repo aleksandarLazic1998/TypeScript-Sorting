@@ -1,3 +1,4 @@
+// Global Interface For Every Data Type
 interface IsSortable {
 	length: number;
 	compare(leftIndex: number, rightIndex: number): boolean;

@@ -1,13 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Characters_1 = require("./Class/Characters");
+var Index_1 = require("./Class/LinkedList/Index");
 var NumbersArray_1 = require("./Class/NumbersArray");
 var Sort_1 = require("./Class/Sort");
 var numbersArray = new NumbersArray_1.NumbersArray([10, 14, 0, 7, -2, 5, 9, -5]);
-var charactersArray = new Characters_1.CharactersArray('aleksandAR');
+var charactersArray = new Characters_1.CharactersArray("aleksandAR");
+var linkedList = new Index_1.LinkedList(100);
+// Implementing Sort Method For Every Data Type That Is Made
 var sortNum = new Sort_1.Sort(numbersArray);
 var sortChar = new Sort_1.Sort(charactersArray);
+linkedList.add(500);
+linkedList.add(200);
+linkedList.add(-100);
+linkedList.add(0);
+linkedList.add(-50);
 sortNum.sort();
 sortChar.sort();
+var sortList = new Sort_1.Sort(linkedList);
+sortList.sort();
+linkedList.print();
 console.log(numbersArray.data);
 console.log(charactersArray.data);
